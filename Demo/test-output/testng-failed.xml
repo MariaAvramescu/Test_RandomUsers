@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.testcases.techtest.ValidateURL">
+        <methods>
+          <include name="createDriver"/>
+          <include name="test"/>
+          <include name="fterTest"/>
+        </methods>
+      </class> <!-- com.testcases.techtest.ValidateURL -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
