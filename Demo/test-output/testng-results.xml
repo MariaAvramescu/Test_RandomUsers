@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6930" started-at="2018-01-21T12:21:33Z" finished-at="2018-01-21T12:21:40Z">
+  <suite name="Default suite" duration-ms="5715" started-at="2018-01-22T00:14:05Z" finished-at="2018-01-22T00:14:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6930" started-at="2018-01-21T12:21:33Z" finished-at="2018-01-21T12:21:40Z">
-      <class name="com.testcases.techtest.ValidateURL">
-        <test-method status="PASS" signature="createDriver()[pri:0, instance:com.testcases.techtest.ValidateURL@7a765367]" name="createDriver" is-config="true" duration-ms="6760" started-at="2018-01-21T13:21:33Z" finished-at="2018-01-21T13:21:40Z">
+    <test name="Default test" duration-ms="5715" started-at="2018-01-22T00:14:05Z" finished-at="2018-01-22T00:14:11Z">
+      <class name="com.testcases.techtest.Ex1_ValidateURL">
+        <test-method status="PASS" signature="createDriver()[pri:0, instance:com.testcases.techtest.Ex1_ValidateURL@7a765367]" name="createDriver" is-config="true" duration-ms="5581" started-at="2018-01-22T01:14:05Z" finished-at="2018-01-22T01:14:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.testcases.techtest.ValidateURL@7a765367]" name="test" duration-ms="31" started-at="2018-01-21T13:21:40Z" finished-at="2018-01-21T13:21:40Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.testcases.techtest.Ex1_ValidateURL@7a765367]" name="test" duration-ms="22" started-at="2018-01-22T01:14:11Z" finished-at="2018-01-22T01:14:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="fterTest()[pri:0, instance:com.testcases.techtest.ValidateURL@7a765367]" name="fterTest" is-config="true" duration-ms="112" started-at="2018-01-21T13:21:40Z" finished-at="2018-01-21T13:21:40Z">
+        <test-method status="PASS" signature="fterTest()[pri:0, instance:com.testcases.techtest.Ex1_ValidateURL@7a765367]" name="fterTest" is-config="true" duration-ms="82" started-at="2018-01-22T01:14:11Z" finished-at="2018-01-22T01:14:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fterTest -->
-      </class> <!-- com.testcases.techtest.ValidateURL -->
+      </class> <!-- com.testcases.techtest.Ex1_ValidateURL -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

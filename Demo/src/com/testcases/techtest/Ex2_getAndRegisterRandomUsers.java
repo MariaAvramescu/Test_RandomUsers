@@ -1,14 +1,10 @@
 package com.testcases.techtest;
 
-import java.sql.Driver;
 import java.util.ArrayList;
-import java.util.Random;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.testcases.helpers.RandomGenerator;
@@ -27,7 +23,6 @@ public class Ex2_getAndRegisterRandomUsers {
 			add(new User("Pay", "Pal"));
 			add(new User("Lazy", "Cat"));
 			add(new User("Jack", "Johnes"));
-			// should i put like... connection words?
 
 		};
 	};
@@ -35,23 +30,18 @@ public class Ex2_getAndRegisterRandomUsers {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver;
 		RandomGenerator randomGenerator = new RandomGenerator();
-		ArrayList<User> usersNotRepeated = new ArrayList<User>();
 
 		ArrayList<User> randomUsers = randomGenerator.getRandomNames(5, users);
-		 driver = new ChromeDriver();
+		driver = new ChromeDriver();
 
 		for (int x = 0; x < randomUsers.size(); x++) {
 			driver.get("http://demoqa.com/registration/");
 			driver.manage().window().maximize();
-			Thread.sleep(2000);
 
 			WebElement firstName = driver.findElement(By.name("first_name"));
 			firstName.sendKeys(randomUsers.get(x).getFirstName());
 			WebElement lastName = driver.findElement(By.name("last_name"));
 			lastName.sendKeys(randomUsers.get(x).getLastName());
-
-			// WebElement maritalStatus = driver.findElement(By.name("radio_4[]")); //
-			// maritalStatus.sendKeys("my "); //radiobox //NOT OBLIGATORY
 
 			WebElement hobby = driver.findElement(By.name("checkbox_5[]"));
 			hobby.click();
@@ -92,8 +82,6 @@ public class Ex2_getAndRegisterRandomUsers {
 
 			WebElement registrationSuccessfullyDone = driver.findElement(By.className("piereg_message"));
 			registrationSuccessfullyDone.isDisplayed();
-
-			Thread.sleep(2000);
 
 		}
 		driver.quit();

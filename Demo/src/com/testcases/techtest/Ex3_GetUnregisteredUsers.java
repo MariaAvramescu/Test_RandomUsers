@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.testcases.helpers.RandomGenerator;
 import com.testcases.helpers.User;
 
-public class ArrayListComparingElements {
+public class Ex3_GetUnregisteredUsers {
 
 	private static ArrayList<User> users = new ArrayList<User>() {
 		{
@@ -18,12 +18,11 @@ public class ArrayListComparingElements {
 			add(new User("Pay", "Pal"));
 			add(new User("Lazy", "Cat"));
 			add(new User("Jack", "Johnes"));
-			// should i put like... connection words?
 
 		};
 	};
 
-	private void findItemInTheList(String itemToFind, ArrayList<User> users,ArrayList<User> randomUsers ) {
+	private void findUnrepetitiveUsers(String itemToFind, ArrayList<User> users,ArrayList<User> randomUsers ) {
 		
 		for (int x = 0; x < randomUsers.size(); x++) {
 			if ((users.get(x).toString().contains(itemToFind))) {
@@ -35,12 +34,12 @@ public class ArrayListComparingElements {
 
 	public static void main(String[] args) {
 		RandomGenerator randomGenerator = new RandomGenerator();
-		ArrayListComparingElements demo = new ArrayListComparingElements();
+		Ex3_GetUnregisteredUsers demo = new Ex3_GetUnregisteredUsers();
 
 		ArrayList<User> randomUsers = randomGenerator.getRandomNames(5, users);
 
 		for (int x = 0; x < randomUsers.size(); x++) {
-			demo.findItemInTheList(randomUsers.get(x).toString(), users,randomUsers);
+			demo.findUnrepetitiveUsers(randomUsers.get(x).toString(), users,randomUsers);
 
 		}
 
